@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tehno-gid.vercel.app/sitemap.xml

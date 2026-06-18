@@ -1,0 +1,64 @@
+{
+  "rewrites": [
+    {
+      "source": "/smartfony-i-planshety/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/smartfony-i-planshety/:path*"
+    },
+    {
+      "source": "/kompyutery-i-noutbuki/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/kompyutery-i-noutbuki/:path*"
+    },
+    {
+      "source": "/set-i-internet/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/set-i-internet/:path*"
+    },
+    {
+      "source": "/soft-i-prilozheniya/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/soft-i-prilozheniya/:path*"
+    },
+    {
+      "source": "/televizory-i-tv-pristavki/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/televizory-i-tv-pristavki/:path*"
+    },
+    {
+      "source": "/audio-i-video/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/audio-i-video/:path*"
+    },
+    {
+      "source": "/avtomobilnaya-elektronika/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/avtomobilnaya-elektronika/:path*"
+    },
+    {
+      "source": "/remont-i-diagnostika/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/remont-i-diagnostika/:path*"
+    },
+    {
+      "source": "/drugoe/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/drugoe/:path*"
+    },
+    {
+      "source": "/umnyj-dom/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/umnyj-dom/:path*"
+    },
+    {
+      "source": "/elektronika-i-gadzhety/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/elektronika-i-gadzhety/:path*"
+    },
+    {
+      "source": "/printery-i-periferiya/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/printery-i-periferiya/:path*"
+    },
+    {
+      "source": "/bezopasnost-i-akkaunty/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/bezopasnost-i-akkaunty/:path*"
+    },
+    {
+      "source": "/3d-pechat-i-modelirovanie/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/3d-pechat-i-modelirovanie/:path*"
+    },
+    {
+      "source": "/igry-i-razvlecheniya/:path*",
+      "destination": "https://tehno-gid-bin-01.vercel.app/igry-i-razvlecheniya/:path*"
+    }
+  ]
+}

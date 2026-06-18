@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>💻</text></svg>">
+    <title>Как подключить PWK 1712CGLD к Алисе: полная настройка — Техно Гид</title>
+    <meta name="description" content="Подробная инструкция по интеграции интеллектуальной клавиатуры PWK 1712CGLD с голосовым ассистентом Яндекс.Алиса. Настройка, софт и решение проблем.">
+    <link rel="canonical" href="https://tehno-gid.vercel.app/articles/p/pw/pwk-1712cgld-kak-podklyuchit-k-alise.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как подключить PWK 1712CGLD к Алисе: полная настройка">
+    <meta property="og:description" content="Подробная инструкция по интеграции интеллектуальной клавиатуры PWK 1712CGLD с голосовым ассистентом Яндекс.Алиса. Настройка, софт и решение проблем.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781752307">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">💻</span>
+                <span class="pb-logo-text">Техно Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/kompyutery-i-noutbuki/" class="pb-dropdown-item">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/" class="pb-dropdown-item">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/" class="pb-dropdown-item">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/" class="pb-dropdown-item">🖨️ Принтеры и Периферия</a>
+<a href="/category/televizory-i-tv-pristavki/" class="pb-dropdown-item">📺 Телевизоры и ТВ-приставки</a>
+<a href="/category/audio-i-video/" class="pb-dropdown-item">🎧 Аудио и Видео</a>
+<a href="/category/3d-pechat-i-modelirovanie/" class="pb-dropdown-item">🖨️ 3D Печать и Моделирование</a>
+<a href="/category/soft-i-prilozheniya/" class="pb-dropdown-item">💿 Софт и Приложения</a>
+<a href="/category/remont-i-diagnostika/" class="pb-dropdown-item">🔧 Ремонт и Диагностика</a>
+<a href="/category/elektronika-i-gadzhety/" class="pb-dropdown-item">⌚ Электроника и Гаджеты</a>
+<a href="/category/bezopasnost-i-akkaunty/" class="pb-dropdown-item">🔒 Безопасность и Аккаунты</a>
+<a href="/category/igry-i-razvlecheniya/" class="pb-dropdown-item">🎮 Игры и Развлечения</a>
+<a href="/category/avtomobilnaya-elektronika/" class="pb-dropdown-item">🚗 Автомобильная электроника</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный Дом</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как подключить PWK 1712CGLD к Алисе: полная настройка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#аппаратные-особенности-модели-1712cgld">Аппаратные особенности модели 1712CGLD</a></li><li><a href="#установка-и-настройка-фирменного-программного-обеспечения">Установка и настройка фирменного программного обеспечения</a></li><li><a href="#алгоритм-привязки-голосового-ассистента">Алгоритм привязки голосового ассистента</a></li><li><a href="#расширенные-сценарии-через-макросы">Расширенные сценарии через макросы</a></li><li><a href="#решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</a></li><li><a href="#альтернативные-методы-интеграции">Альтернативные методы интеграции</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/p/pe/perevod-mir-dver-myach-na-anglijskij.html">Перевод Мир Дверь Мяч на английский: значения и транскрипция</a></li><li><a href="/drugoe/z/zn/znachenie-na-chasakh-21-11.html">Значение на часах 21:11: Астрология, нумерология и психологический аспект</a></li><li><a href="/drugoe/m/mo/mozhno-li-vesti-zapis-v-sude.html">Можно ли вести запись в суде: закон, виды и последствия</a></li><li><a href="/drugoe/s/sk/skolko-zhertv-bylo-u-chikatilo-po-faktu.html">Жертвы Чикатило: реальное число по факту и статистика</a></li><li><a href="/drugoe/p/pr/pritcha-tsarya-solomona-o-koltse-vse-projdet.html">Притча царя Соломона о кольце: смысл и история легенды</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Интеграция клавиатуры PWK 1712CGLD с голосовым помощником Алиса</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#аппаратные-особенности-модели-1712cgld">Аппаратные особенности модели 1712CGLD</a></li><li><a href="#установка-и-настройка-фирменного-программного-обеспечения">Установка и настройка фирменного программного обеспечения</a></li><li><a href="#алгоритм-привязки-голосового-ассистента">Алгоритм привязки голосового ассистента</a></li><li><a href="#расширенные-сценарии-через-макросы">Расширенные сценарии через макросы</a></li><li><a href="#решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</a></li><li><a href="#альтернативные-методы-интеграции">Альтернативные методы интеграции</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Механические клавиатуры серии <em>PWK 1712</em>, и в частности модель <em>1712CGLD</em>, заслуженно пользуются популярностью среди энтузиастов благодаря возможности полноценной кастомизации и горячему свопу переключателей. Однако многие пользователи сталкиваются с трудностями при попытке расширить функционал устройства за пределы стандартного ввода текста, в частности, при желании задействовать голосовые команды Яндекс.Алисы. Важно сразу отметить: клавиатура сама по себе не имеет встроенного микрофона или модуля прямой связи с серверами Яндекса.</p>
+
+<p>Тем не менее, интеграция возможна через программную обвязку, превращающую устройство в мощный пульт управления умным домом или медиасистемой. Для реализации этой задачи вам потребуется установить специализированное драйверное ПО от производителя и настроить макросы или комбинации клавиш, которые будут запускать скрипты вызова ассистента. Это открывает широкие возможности для автоматизации рабочего процесса, превращая стандартный ввод в интерактивное управление.</p>
+
+<p>В данной статье мы детально разберем процесс настройки связки <strong>PWK</strong> и <strong>Алисы</strong>, рассмотрим нюансы работы с фирменным софтом и предложим альтернативные решения для тех, кто предпочитает открытые платформы. Вы узнаете, как назначить вызов голосового помощника на удобную клавишу и избежать распространенных ошибок конфигурации.</p>
+
+<h2 id="аппаратные-особенности-модели-1712cgld">Аппаратные особенности модели 1712CGLD</h2>
+
+<p>Прежде чем переходить к программной части, необходимо понять, с каким именно оборудованием мы работаем. Модель <em>1712CGLD</em> представляет собой полноразмерную или компактную (в зависимости от ревизии) механическую клавиатуру с поддержкой проводного подключения через интерфейс <code>USB Type-C</code>. Именно качество соединения играет критическую роль при передаче сигналов макросов без задержек.</p>
+
+<p>Устройство оснащено контроллером, поддерживающим запись макросов непосредственно во встроенную память. Это означает, что даже если вы отключите клавиатуру от компьютера и подключите к другому ПК с предустановленным профилем, назначенные функции сохранятся. Однако для первичной настройки и привязки сложных действий, таких как запуск <strong>Яндекс.Алисы</strong>, потребуется взаимодействие с компьютером.</p>
+
+<p>Особое внимание стоит уделить подсветке и индикаторам состояния. В некоторых версиях прошивки индикатор <code>CapsLock</code> или специальный светодиод может сигнализировать об активности режима записи макросов или ошибке синхронизации. Корпус выполнен из пластика повышенной прочности, а кейкапы часто имеют двойное литье, что обеспечивает долговечность легенды при интенсивном использовании.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Убедитесь, что вы используете оригинальный кабель из комплекта поставки или сертифицированный аналог с поддержкой передачи данных. Дешевые кабели «только для зарядки» не позволят компьютеру распознать устройство как HID-девайс, что сделает настройку невозможной.</p>
+</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности оборудования</h4><label class="check-item"><input type="checkbox"><span>Подключен оригинальный USB кабель</span></label><label class="check-item"><input type="checkbox"><span>Установлены драйверы чипсета материнской платы</span></label><label class="check-item"><input type="checkbox"><span>Клавиатура определяется в Диспетчере устройств</span></label><label class="check-item"><input type="checkbox"><span>Есть доступ к интернету для загрузки ПО</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="установка-и-настройка-фирменного-программного-обеспечения">Установка и настройка фирменного программного обеспечения</h2>
+
+<p>Ключевым элементом в цепи настройки является официальный софт от производителя <em>PWK</em>. Без него раскрыть потенциал клавиатуры не удастся, так как стандартные средства операционной системы не видят расширенных функций устройства. Обычно драйвер доступен на официальном сайте или поставляется на компакт-диске в коробке, хотя последний вариант встречается все реже.</p>
+
+<p>После скачивания архива с программой его необходимо распаковать и запустить исполняемый файл от имени администратора. В открывшемся интерфейсе вы увидите виртуальную копию вашей клавиатуры. Навигация по меню осуществляется через вкладки, где можно настроить подсветку, чувствительность срабатывания и, самое главное, переназначение клавиш.</p>
+
+<p>Интерфейс программы может быть частично на китайском языке, поэтому рекомендуется использовать скриншоты с переводом или искать русифицированные версии от сообщества энтузиастов. В разделе <code>Key Setting</code> или <code>Macro</code> происходит основная магия конфигурации. Здесь вы можете присвоить любой клавише действие запуска внешнего приложения или выполнения последовательности нажатий.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Раздел меню</th>
+<th>Функция</th>
+<th>Необходимость для Алисы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light Effect</td>
+<td>Настройка RGB подсветки</td>
+<td>Нет (косметическая)</td>
+</tr>
+<tr>
+<td>Key Setting</td>
+<td>Переназначение кнопок</td>
+<td>Высокая (основная)</td>
+</tr>
+<tr>
+<td>Macro Editor</td>
+<td>Запись последовательностей</td>
+<td>Средняя (для сложных сценариев)</td>
+</tr>
+<tr>
+<td>System</td>
+<td>Обновление прошивки</td>
+<td>Критическая (совместимость)</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Где скачать драйвер, если диска нет?</summary><div class="pb-accordion-body"><p>Официальный сайт производителя PWK иногда меняет структуру. Если вы не нашли раздел загрузок, попробуйте поискать модель по артикулу на крупных площадках электроники в разделе «Файлы» или обратитесь в техническую поддержку продавца, у которого было приобретено устройство. Часто ссылки хранятся на облачных дисках вроде Google Drive или Baidu Pan.</p></div></details>
+
+<h2 id="алгоритм-привязки-голосового-ассистента">Алгоритм привязки голосового ассистента</h2>
+
+<p>Сам процесс подключения к <strong>Алисе</strong> сводится к эмуляции нажатия горячей клавиши, которая уже настроена в самом голосовом помощнике на ПК. По умолчанию в приложении Яндекс для Windows или в браузере с установленным расширением такая комбинация часто отключена или установлена на неудобное сочетание.</p>
+
+<p>Сначала откройте настройки Яндекс.Станции или приложения Яндекс на компьютере. Найдите раздел, отвечающий за голосовое управление, и установите удобную горячую клавишу, например, <code>F12</code> или <code>Right Ctrl</code>. Запомните это сочетание, так как именно его мы будем прописывать в клавиатуре.</p>
+
+<p>Далее вернитесь в ПО клавиатуры <em>PWK</em>. Выберите клавишу, которую хотите использовать для вызова Алисы (например, одну из клавиш рядом с пробелом или редко используемую функциональную). В выпадающем списке действий выберите опцию «Комбинация клавиш» или «Keyboard Shortcut». В поле ввода нажмите ту самую комбинацию, которую вы задали в настройках Яндекса.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для быстрого вызова лучше назначать одиночные клавиши, которые не используются в играх или работе, например, правый Alt или одну из клавиш F-ряда, если она не занята системными функциями. Это сократит время отклика и упростит использование.</p></aside>
+
+<p>После назначения не забудьте нажать кнопку <code>Apply</code> или <code>Save</code> в программе. В некоторых моделях требуется дополнительно отправить профиль в память устройства, нажав комбинацию <code>Fn + Esc</code> удерживая несколько секунд, пока индикатор не мигнет. Теперь при нажатии выбранной кнопки система должна реагировать так, будто вы нажали исходную комбинацию, активируя микрофон ассистента.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если у вас одновременно запущено несколько программ, реагирующих на одну и ту же горячую клавишу (например, скриншотер и Алиса), приоритет будет у того приложения, которое было запущено позже или имеет более высокий приоритет в системе. Проверьте конфликты сочетаний клавиш в настройках Windows.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-2a0eb168"><div class="pb-poll-question">📊 Какую клавишу вы бы назначили для вызова Алисы?</div><div class="pb-poll-option" data-poll="2a0eb168" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Отдельная кнопка справа от пробела</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2a0eb168" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Клавиша F12</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2a0eb168" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинация Fn + Пробел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2a0eb168" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Специальная макроклавиша M1</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расширенные-сценарии-через-макросы">Расширенные сценарии через макросы</h2>
+
+<p>Возможности <em>PWK 1712CGLD</em> не ограничиваются простым запуском. Используя редактор макросов, вы можете создать сложные сценарии взаимодействия с умным домом. Например, одно нажатие может не просто включить микрофон, но и сразу отправить конкретную голосовую команду, если использовать текстовый ввод в сочетании с голосом.</p>
+
+<p>Макрос позволяет записать последовательность: нажатие клавиши вызова Алисы, пауза в 1 секунду (ожидание активации), а затем эмуляция нажатия клавиши ввода после того, как вы произнесли команду (если вы используете гибридный режим). Однако для чисто голосового управления достаточно простой эмуляции хоткея.</p>
+
+<p>Более продвинутые пользователи могут настроить макросы для управления светом или музыкой без голоса. Нажатие одной кнопки может отправлять в чат с Алисой (если он открыт) текстовые команды вроде «включи свет на кухне». Для этого в редакторе макросов прописывается последовательность символов с задержками между нажатиями, имитирующими скорость печати человека.</p>
+
+<p>Важно учитывать задержки (<strong>Delay</strong>) в макросах. Слишком быстрая отправка символов может быть воспринята системой как сбой или спам, и команда не выполнится. Оптимальная задержка между символами составляет от 50 до 100 миллисекунд. Тестирование лучше проводить в текстовом редакторе перед внедрением в рабочий профиль.</p>
+
+<h2 id="решение-распространенных-проблем-подключения">Решение распространенных проблем подключения</h2>
+
+<p>Несмотря на простоту алгоритма, пользователи иногда сталкиваются с тем, что клавиатура не реагирует на назначенные действия или Алиса не активируется. Первой причиной часто становится работа ПО клавиатуры без прав администратора. В этом случае операционная система блокирует перехват или эмуляцию системных клавиш.</p>
+
+<p>Вторая причина — конфликт драйверов. Если у вас ранее были установлены программы для других периферийных устройств (Logitech G Hub, Razer Synapse), они могут перехватывать управление USB-устройствами. Попробуйте временно отключить лишнее ПО и проверить работу <em>PWK</em> в «чистой» среде.</p>
+
+<p>Также проблема может крыться в самой версии прошивки клавиатуры. Производители периодически выпускают обновления, исправляющие баги с памятью макросов. Зайдите в раздел <code>System</code> фирменной утилиты и проверьте наличие новой версии. Если кнопка обновления неактивна, возможно, потребуется скачать отдельный файл прошивки с сайта.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Процесс обновления прошивки (Firmware Update) критически важен. Ни в коем случае не отключайте кабель USB и не выключайте компьютер во время записи данных в память контроллера. Это может привести к полному выходу устройства из строя («окирпичиванию»), восстановить которое в домашних условиях крайне сложно.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>90% проблем с неработающими макросами решаются перезапуском программы настройки от имени администратора и проверкой того, сохранен ли профиль во встроенную память клавиатуры.</p></aside>
+
+<h2 id="альтернативные-методы-интеграции">Альтернативные методы интеграции</h2>
+
+<p>Если фирменное ПО кажется вам неудобным или нестабильным, существуют сторонние решения для переназначения клавиш, которые работают на уровне операционной системы. Программы типа <em>PowerToys</em> от Microsoft или <em>AutoHotkey</em> позволяют перехватывать сигналы с любых клавиш и перенаправлять их.</p>
+
+<p>С помощью <strong>AutoHotkey</strong> можно написать скрипт, который будет отслеживать нажатие конкретной клавиши на <em>PWK</em> и отправлять системную команду вызова Алисы. Это дает гибкость, недоступную в заводском софте, например, возможность менять логику работы в зависимости от активного окна.</p>
+
+<p>Пример простейшего скрипта для вызова Алисы при нажатии F13 (если такая клавиша эмулируется):
+<pre><code>F13::
+<p>Run, "C:\Path\To\Yandex\Alice.exe"</p>
+<p>return</code></pre></p>
+<p>Однако такой метод требует, чтобы драйверы клавиатуры были установлены хотя бы для базовой работы, и может не сработать, если клавиатура отправляет уникальные скан-коды, не распознаваемые Windows без родного драйвера.</p></p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли подключить PWK 1712CGLD к Алисе по Bluetooth без проводов?</summary>
+<p>Модель 1712CGLD в большинстве модификаций является проводной. Если ваша версия поддерживает беспроводное подключение, принцип настройки остается тем же: макрос записывается в память клавиатуры. Однако стабильность работы голосовых команд по Bluetooth может быть ниже из-за возможных задержек сигнала по сравнению с кабелем.</p>
+</details>
+
+<details>
+<summary>Сбрасываются ли настройки при переподключении к другому ПК?</summary>
+<p>Нет, если вы сохранили профиль во встроенную память клавиатуры (обычно это делается автоматически при нажатии Save или комбинации Fn+Esc). Клавиатура будет работать с назначенными макросами на любом компьютере, даже без установки драйверов, но изменить настройки без ПО на новом ПК не получится.</p>
+</details>
+
+<details>
+<summary>Почему Алиса не слышит меня после нажатия кнопки на клавиатуре?</summary>
+<p>Проверьте настройки микрофона в Windows и в самом приложении Яндекс. Убедитесь, что выбран правильный устройство ввода. Также проверьте, не блокирует ли антивирус доступ к микрофону для браузера или приложения Станции. Клавиатура лишь посылает сигнал активации, но не передает звук.</p>
+</details>
+
+<details>
+<summary>Поддерживает ли эта клавиатура русскую раскладку в макросах?</summary>
+<p>Да, но с оговорками. При записи макросов с текстовыми командами лучше использовать английскую раскладку или скан-коды, так как эмуляция ввода русских букв может зависеть от текущей раскладки системы в момент выполнения макроса. Для вызова Алисы это не критично, так как используется только сигнал нажатия.</p>
+</details>
+
+<details>
+<summary>Где найти официальную инструкцию на русском языке?</summary>
+<p>Полноценные бумажные инструкции на русском языке часто отсутствуют в комплекте. Вся необходимая информация содержится в интерфейсе программы настройки или на страницах товара у официальных дилеров в разделе «Файлы». Сообщество пользователей также создает переводы меню на форумах.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/p/pe/perevod-mir-dver-myach-na-anglijskij.html" class="pb-related-card">
+                <span class="pb-related-title">Перевод Мир Дверь Мяч на английский: значения и транскрипция</span>
+                <span class="pb-related-desc">Как перевести слова мир, дверь и мяч на английский язык? Полный разбор значений, контекста, транскри</span>
+            </a><a href="/drugoe/z/zn/znachenie-na-chasakh-21-11.html" class="pb-related-card">
+                <span class="pb-related-title">Значение на часах 21:11: Астрология, нумерология и психологический аспект</span>
+                <span class="pb-related-desc">Увидели 21:11 на часах? Разбираем значение ангельской нумерологии, кармический смысл и психологию си</span>
+            </a><a href="/drugoe/m/mo/mozhno-li-vesti-zapis-v-sude.html" class="pb-related-card">
+                <span class="pb-related-title">Можно ли вести запись в суде: закон, виды и последствия</span>
+                <span class="pb-related-desc">Разбираем, разрешено ли аудио- и видеозапись в суде. Узнайте о правах участников, требованиях к устр</span>
+            </a><a href="/drugoe/s/sk/skolko-zhertv-bylo-u-chikatilo-po-faktu.html" class="pb-related-card">
+                <span class="pb-related-title">Жертвы Чикатило: реальное число по факту и статистика</span>
+                <span class="pb-related-desc">Сколько жертв было у Андрея Чикатило по факту? Полный разбор судебного дела, методика следствия и та</span>
+            </a><a href="/drugoe/p/pr/pritcha-tsarya-solomona-o-koltse-vse-projdet.html" class="pb-related-card">
+                <span class="pb-related-title">Притча царя Соломона о кольце: смысл и история легенды</span>
+                <span class="pb-related-desc">Глубокий анализ притчи царя Соломона о кольце с надписью «Все пройдет». История возникновения, филос</span>
+            </a><a href="/drugoe/g/gd/gdz-po-algebre-7-klass-323.html" class="pb-related-card">
+                <span class="pb-related-title">ГДЗ по алгебре 7 класс 323: решение и разбор</span>
+                <span class="pb-related-desc">Подробное решение задачи №323 по алгебре 7 класс. Разбор уравнений с одной переменной, правила раскр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">💻 Техно Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a> · <a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a> · <a href="/category/set-i-internet/">📶 Сеть и Интернет</a> · <a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a> · <a href="/category/televizory-i-tv-pristavki/">📺 Телевизоры и ТВ-приставки</a> · <a href="/category/audio-i-video/">🎧 Аудио и Видео</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Техно Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

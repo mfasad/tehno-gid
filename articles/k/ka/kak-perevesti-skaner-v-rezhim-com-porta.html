@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>💻</text></svg>">
+    <title>Как перевести сканер в режим COM-порта: настройка и драйверы — Техно Гид</title>
+    <meta name="description" content="Пошаговая инструкция по эмуляции COM-порта для штрих-кода. Настройка драйверов, выбор режимов эмуляции и устранение ошибок подключения к ПК.">
+    <link rel="canonical" href="https://tehno-gid.vercel.app/articles/k/ka/kak-perevesti-skaner-v-rezhim-com-porta.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как перевести сканер в режим COM-порта: настройка и драйверы">
+    <meta property="og:description" content="Пошаговая инструкция по эмуляции COM-порта для штрих-кода. Настройка драйверов, выбор режимов эмуляции и устранение ошибок подключения к ПК.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781752307">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">💻</span>
+                <span class="pb-logo-text">Техно Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/kompyutery-i-noutbuki/" class="pb-dropdown-item">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/" class="pb-dropdown-item">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/" class="pb-dropdown-item">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/" class="pb-dropdown-item">🖨️ Принтеры и Периферия</a>
+<a href="/category/televizory-i-tv-pristavki/" class="pb-dropdown-item">📺 Телевизоры и ТВ-приставки</a>
+<a href="/category/audio-i-video/" class="pb-dropdown-item">🎧 Аудио и Видео</a>
+<a href="/category/3d-pechat-i-modelirovanie/" class="pb-dropdown-item">🖨️ 3D Печать и Моделирование</a>
+<a href="/category/soft-i-prilozheniya/" class="pb-dropdown-item">💿 Софт и Приложения</a>
+<a href="/category/remont-i-diagnostika/" class="pb-dropdown-item">🔧 Ремонт и Диагностика</a>
+<a href="/category/elektronika-i-gadzhety/" class="pb-dropdown-item">⌚ Электроника и Гаджеты</a>
+<a href="/category/bezopasnost-i-akkaunty/" class="pb-dropdown-item">🔒 Безопасность и Аккаунты</a>
+<a href="/category/igry-i-razvlecheniya/" class="pb-dropdown-item">🎮 Игры и Развлечения</a>
+<a href="/category/avtomobilnaya-elektronika/" class="pb-dropdown-item">🚗 Автомобильная электроника</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный Дом</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как перевести сканер в режим COM-порта: настройка и драйверы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принципы-работы-эмуляции-com-порта">Принципы работы эмуляции COM-порта</a></li><li><a href="#подготовка-драйверов-и-виртуальных-портов">Подготовка драйверов и виртуальных портов</a></li><li><a href="#программная-конфигурация-сканера">Программная конфигурация сканера</a></li><li><a href="#настройка-параметров-в-операционной-системе">Настройка параметров в операционной системе</a></li><li><a href="#таблица-типичных-ошибок-и-их-решения">Таблица типичных ошибок и их решения</a></li><li><a href="#блокировка-и-разблокировка-настроек">Блокировка и разблокировка настроек</a></li><li><a href="#специфика-работы-по-bluetooth">Специфика работы по Bluetooth</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/c/ch/chikatilo-kakogo-goda-rozhdeniya.html">Чикатило какого года рождения: биография и факты</a></li><li><a href="/drugoe/l/lu/luchshie-servisy-dlya-arendy-zhilya.html">Лучшие сервисы для аренды жилья: рейтинг платформ 2026</a></li><li><a href="/drugoe/n/na/nastoyashchaya-familiya-lyuisa-kerrolla.html">Настоящая фамилия Льюиса Кэрролла: псевдоним и реальное имя автора</a></li><li><a href="/drugoe/v/vo/vozrast-solntsa-i-zemli.html">Возраст Солнца и Земли: научные методы и точные цифры</a></li><li><a href="/drugoe/c/ch/chto-oznachaet-kogda-vidish-na-chasakh-17-17.html">Что означает видеть 17:17: эзотерическое и психологическое значение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Настройка сканера штрих-кода в режиме эмуляции COM-порта</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принципы-работы-эмуляции-com-порта">Принципы работы эмуляции COM-порта</a></li><li><a href="#подготовка-драйверов-и-виртуальных-портов">Подготовка драйверов и виртуальных портов</a></li><li><a href="#программная-конфигурация-сканера">Программная конфигурация сканера</a></li><li><a href="#настройка-параметров-в-операционной-системе">Настройка параметров в операционной системе</a></li><li><a href="#таблица-типичных-ошибок-и-их-решения">Таблица типичных ошибок и их решения</a></li><li><a href="#блокировка-и-разблокировка-настроек">Блокировка и разблокировка настроек</a></li><li><a href="#специфика-работы-по-bluetooth">Специфика работы по Bluetooth</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Подключение сканера штрих-кода к компьютеру или кассовому оборудованию часто требует не просто физического соединения кабелем, но и правильной программной конфигурации. В отличие от стандартного режима клавиатуры (HID), когда устройство просто «вводит» цифры, режим эмуляции <strong>COM-порта</strong> позволяет передавать данные как последовательный поток, что критически важно для специализированного программного обеспечения.</p>
+
+<p>Многие пользователи ошибочно предполагают, что достаточно вставить сканер в USB-порт, и система автоматически определит его как виртуальный порт. На практике же работа с <em>виртуальным COM-портом</em> (Virtual COM Port) требует установки специфических драйверов и изменения настроек самого сканера через специальные сервисные штрих-коды. Без этих действий программа может просто не видеть устройство или выдавать ошибку соединения.</p>
+
+<p>В этой статье мы разберем алгоритм действий для настройки популярных моделей, таких как <em>Zebra</em>, <em>Honeywell</em> и бюджетных <em>Urovo</em>. Вы узнаете, как найти нужные коэффициенты в инструкции, какие параметры нужно выставить в диспетчере устройств и как избежать конфликтов адресов. <mark>Установка драйверов должна производиться до подключения сканера к компьютеру, чтобы система могла корректно привязать устройство к конкретному виртуальному COM-порту.</mark></p>
+
+<h2 id="принципы-работы-эмуляции-com-порта">Принципы работы эмуляции COM-порта</h2>
+
+<p>Когда сканер работает в режиме эмуляции последовательного порта, он перестает отправлять данные как нажатия клавиш клавиатуры. Вместо этого он формирует пакет данных, идентичный тому, который передает классический физический интерфейс RS-232. Это дает программному обеспечению прямой доступ к сырым данным, что позволяет реализовать сложные логические цепочки обработки информации, недоступные в режиме клавиатуры.</p>
+
+<p>Современные интерфейсы USB и Bluetooth используют протокол CDC (Communications Device Class) или FTDI для имитации работы физического COM-порта. Система видит устройство не как устройство ввода, а как <strong>сетевой адаптер</strong> или модем, присваивая ему уникальный номер порта, например, <code>COM3</code> или <code>COM5</code>. Этот номер может меняться при переподключении, если не зафиксировать его в настройках.</p>
+
+<p>Важно понимать, что скорость передачи данных (Baud Rate) в режиме эмуляции должна точно совпадать с настройками принимающей программы. Если сканер настроен на <code>9600</code> бит/с, а программа ожидает <code>115200</code>, вы получите набор нечитаемых символов или полное отсутствие связи. Именно поэтому <em>параметры последовательного порта</em> являются ключевым звеном в настройке.</p>
+
+<h2 id="подготовка-драйверов-и-виртуальных-портов">Подготовка драйверов и виртуальных портов</h2>
+
+<p>Первым этапом настройки является обеспечение наличия необходимых драйверов в операционной системе. Для большинства сканеров, эмулирующих COM-порт, используются чипы от производителей <em>FTDI</em>, <em>Prolific</em> или <em>CH340</em>. Без корректно установленного драйвера устройство может определяться в диспетчере задач как «Неизвестное устройство» или работать нестабильно.</p>
+
+<p>Загрузите дистрибутив драйверов с официального сайта производителя сканера или чипа. Установите программу и перезагрузите компьютер. Только после этого можно подключать сканер. Убедитесь, что в <code>Диспетчере устройств</code> в разделе «Порты (COM и LPT)» появилось новое устройство с названием, содержащим «USB Serial Port» или марку вашего сканера.</p>
+
+<p>Если драйвер не устанавливается автоматически, попробуйте запустить инсталлятор от имени администратора. В некоторых случаях, особенно на Windows 10 и 11, требуется отключить проверку цифровой подписи драйверов, если производитель не предоставляет сертифицированный пакет.</p>
+
+<p>Обратите внимание на список поддерживаемых операционных систем в документации к драйверу. Старые версии ПО могут некорректно работать на новых сборках Windows, вызывая ошибки при попытке открыть порт программой-клиентом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не используйте универсальные драйверы-«доноры», скачанные с сомнительных сайтов. Это может привести к конфликту адресов и полному отказу работы всех COM-портов в системе.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-40cfa05a"><div class="pb-poll-question">📊 Какой тип подключения вы используете чаще всего?</div><div class="pb-poll-option" data-poll="40cfa05a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">USB-кабель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40cfa05a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Bluetooth</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40cfa05a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Старый RS-232 разъем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40cfa05a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Wi-Fi</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="программная-конфигурация-сканера">Программная конфигурация сканера</h2>
+
+<p>После того как драйверы установлены и сканер физически подключен, необходимо перевести его в нужный режим работы. Для этого обычно используются специальные сервисные штрих-коды, которые находятся в инструкции пользователя. Внимательно изучите раздел, посвященный настройке интерфейса (Interface Settings).</p>
+
+<p>Ищите штрих-код с названием <code>USB to COM Port</code>, <code>RS-232 Emulation</code> или <code>Virtual COM Port</code>. Отсканируйте этот код своим устройством. Сканер должен издать звуковой сигнал подтверждения. Если вы не видите инструкции под рукой, попробуйте найти PDF-версию мануала на сайте производителя по модели устройства.</p>
+
+<p>Важным параметром является выбор количества потоков (Data Pipe). Обычно требуется выбрать <strong>1 поток данных</strong> (Single Data Pipe), чтобы избежать дублирования символов. Также проверьте настройки окончания строки (Line Feed / Carriage Return). Для большинства программных решений требуется отправка символа <code>CR+LF</code> после каждого отсканированного кода.</p>
+
+<p>Далее необходимо настроить скорость передачи. В меню сканера ищите параметры <code>Baud Rate</code>. Стандартные значения — <code>9600</code>, <code>19200</code>, <code>38400</code>, <code>57600</code> или <code>115200</code>. Установите значение, соответствующее требованиям вашего программного обеспечения, или выберите «Auto» (Автоматическое определение), если программа это поддерживает.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Настройка режима эмуляции</h4><label class="check-item"><input type="checkbox"><span>Отсканировать код "USB to COM"</span></label><label class="check-item"><input type="checkbox"><span>Выбрать скорость передачи (Baud Rate)</span></label><label class="check-item"><input type="checkbox"><span>Настроить символы окончания строки (CR/LF)</span></label><label class="check-item"><input type="checkbox"><span>Проверить номер порта в Windows</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="настройка-параметров-в-операционной-системе">Настройка параметров в операционной системе</h2>
+
+<p>Теперь, когда сканер переведен в режим эмуляции, нужно убедиться, что Windows видит его корректно. Зайдите в <code>Диспетчер устройств</code> (можно найти через поиск «devmgmt.msc»). Раскройте раздел «Порты (COM и LPT)».</p>
+
+<p>Найдите строку с названием вашего сканера, например, <em>Honeywell USB Serial Port (COM4)</em>. Нажмите на неё правой кнопкой мыши и выберите «Свойства». Перейдите на вкладку «Параметры порта» (Port Settings). Здесь вы должны увидеть те же настройки скорости (Bits per second), которые вы задали в самом сканере.</p>
+
+<p>Кликните кнопку «Дополнительно» (Advanced). Здесь можно изменить номер COM-порта на свободный, если текущий занят другим оборудованием или конфликтует с программой. Рекомендуемый диапазон для сканеров — от <code>COM1</code> до <code>COM10</code>, но лучше выбирать высокие номера (например, <code>COM15</code>), чтобы избежать конфликтов с системными портами.</p>
+
+<p>Также проверьте настройки буферов. Убедитесь, что буфер приема (Receive Buffer) и передачи (Transmit Buffer) установлены на максимальные значения. Это предотвратит потерю данных при сканировании большого количества штрих-кодов подряд.</p>
+
+<details class="pb-accordion"><summary>Что делать, если порт не отображается?</summary><div class="pb-accordion-body"><p>Если в диспетчере устройств нет нового порта, проверьте вкладку "Другие устройства". Возможно, драйвер установлен некорректно, и устройство имеет знак восклицательного желтого знака. В этом случае нужно удалить устройство, отключить сканер, переустановить драйвер и подключить сканер заново.</p></div></details>
+
+<h2 id="таблица-типичных-ошибок-и-их-решения">Таблица типичных ошибок и их решения</h2>
+
+<p>Работа с эмуляцией портов часто сопряжена с техническими нюансами, которые могут сбивать с толку неопытных пользователей. Ниже приведена таблица наиболее частых проблем и способов их устранения.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Проблема</th>
+      <th>Возможная причина</th>
+      <th>Решение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Сканер пищит, но данные не передаются</td>
+      <td>Несовпадение скорости (Baud Rate)</td>
+      <td>Сверьте настройки в сканере и в программе</td>
+    </tr>
+    <tr>
+      <td>В программе появляются "кракозябры"</td>
+      <td>Неправильная кодировка или поток</td>
+      <td>Настройте <code>Line Feed</code> и кодировку ASCII/UTF-8</td>
+    </tr>
+    <tr>
+      <td>Порт не открывается в программе</td>
+      <td>Порт занят другим процессом</td>
+      <td>Закройте все программы, использующие этот COM</td>
+    </tr>
+    <tr>
+      <td>Устройство не определяется</td>
+      <td>Отсутствует драйвер</td>
+      <td>Установите драйвер от производителя чипа</td>
+    </tr>
+    <tr>
+      <td>Дублирование данных</td>
+      <td>Включено несколько режимов</td>
+      <td>Сбросьте сканер на заводские настройки</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Иногда проблема кроется не в настройках, а в кабеле. Некоторые дешевые кабели USB предназначены только для зарядки и не поддерживают передачу данных. Используйте только оригинальные кабели или качественные кабели с экранированием.</p>
+
+<blockquote>
+<p>⚠️ Внимание: После смены номера COM-порта в настройках Windows вам обязательно нужно изменить этот номер в конфигурации вашей кассовой программы или 1С, иначе соединение не установится.</p>
+</blockquote>
+
+<h2 id="блокировка-и-разблокировка-настроек">Блокировка и разблокировка настроек</h2>
+
+<p>После успешной настройки крайне важно зафиксировать параметры, чтобы они не сбросились случайно. В большинстве сканеров для этого предусмотрен специальный сервисный штрих-код с названием <code>Lock Settings</code> или <code>Disable Interface Changes</code>. Сканирование этого кода запретит устройство изменять режим работы при сканировании случайных штрих-кодов.</p>
+
+<p>Если вы планировали дальнейшие изменения, оставьте режим разблокированным. Однако для торгового оборудования, где сканер находится в зоне доступа сотрудников, блокировка настроек — обязательный этап. Это предотвратит случайный перевод устройства в режим клавиатуры или изменение скорости передачи.</p>
+
+<p>В случае сбоя или необходимости полной перенастройки можно использовать штрих-код <code>Restore Factory Defaults</code>. Помните, что эта операция удалит все пользовательские настройки, включая префиксы, суффиксы и выбранный режим порта. Будьте готовы к тому, что процедуру настройки придется пройти заново.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед блокировкой настроек сделайте скриншот диспетчера устройств, чтобы сохранить номер COM-порта. Если система после перезагрузки присвоит новый номер, вы быстро вспомните, какой именно порт был настроен.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная цель настройки — обеспечить стабильную синхронизацию скорости передачи данных между сканером, драйвером и прикладным программным обеспечением.</p></aside>
+
+<h2 id="специфика-работы-по-bluetooth">Специфика работы по Bluetooth</h2>
+
+<p>Настройка эмуляции COM-порта по Bluetooth имеет свою специфику. Здесь виртуальный порт создается не драйвером USB-устройства, а стеком Bluetooth-соединения. В Windows это часто выглядит как «SPP Serial Port».</p>
+
+<p>При сопряжении устройства убедитесь, что в настройках Bluetooth вашего ПК выбран тип профиля «Serial Port» (SPP). Некоторые системы требуют ввода PIN-кода (часто это <code>0000</code> или <code>1234</code>), который указан в инструкции к сканеру. После сопряжения проверьте, какой номер COM-порта назначил системе беспроводной модуль.</p>
+
+<p>В отличие от проводного подключения, беспроводная эмуляция может страдать от задержек. Убедитесь, что вы работаете в зоне покрытия сигнала без сильных помех от других радиочастотных устройств. Также проверьте, что батарея сканера заряжена, так как низкий заряд может привести к нестабильности передачи пакетов данных.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Для корректной работы по Bluetooth убедитесь, что ваш сканер поддерживает профиль SPP (Serial Port Profile), а не только HID (Human Interface Device), который работает просто как клавиатура.</p>
+</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+  <summary>Почему мой сканер определяется как клавиатура, а не как COM-порт?</summary>
+  <p>По умолчанию большинство сканеров настроены в режим HID (клавиатуры) для совместимости с любыми устройствами без установки драйверов. Чтобы изменить это, вам необходимо отсканировать специальный сервисный штрих-код из инструкции, который активирует режим <em>USB to COM</em> или <em>RS-232 Emulation</em>.</p>
+</details>
+
+<details>
+  <summary>Как узнать, какой COM-порт назначен моему сканеру?</summary>
+  <p>Откройте <code>Диспетчер устройств</code> в Windows, раскройте раздел «Порты (COM и LPT)». Найдите там название вашего устройства (например, «Honeywell USB Serial Port»). Номер порта будет указан в скобках, например, <code>(COM4)</code>. Если устройства нет, проверьте вкладку «Другие устройства».</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать один сканер на нескольких компьютерах?</summary>
+  <p>Да, но с оговорками. При каждом подключении к новому компьютеру система может назначить этому устройству новый номер COM-порта. Вам придется заново настроить программное обеспечение на каждом ПК, указав актуальный номер порта. Для стабильной работы рекомендуется зафиксировать номер порта в настройках драйвера в диспетчере устройств.</p>
+</details>
+
+<details>
+  <summary>Что делать, если программа выдает ошибку "Порт занят"?</summary>
+  <p>Это означает, что другой процесс или программа уже открыла доступ к этому COM-порту. Закройте все приложения, которые могут использовать сканер. Если проблема сохраняется, перезагрузите компьютер и попробуйте открыть программу от имени администратора.</p>
+</details>
+
+<details>
+  <summary>Влияет ли длина USB-кабеля на работу COM-порта?</summary>
+  <p>Да, для стандартных USB-кабелей максимальная длина составляет 5 метров. Для более длинных соединений необходимы активные удлинители с усилителем сигнала. Пассивные кабели длиннее 5 метров могут привести к потере данных и нестабильной работе эмуляции порта, особенно при высоких скоростях передачи.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/c/ch/chikatilo-kakogo-goda-rozhdeniya.html" class="pb-related-card">
+                <span class="pb-related-title">Чикатило какого года рождения: биография и факты</span>
+                <span class="pb-related-desc">В каком году родился Андрей Чикатило? Подробная биография, дата рождения, место жительства и хроноло</span>
+            </a><a href="/drugoe/l/lu/luchshie-servisy-dlya-arendy-zhilya.html" class="pb-related-card">
+                <span class="pb-related-title">Лучшие сервисы для аренды жилья: рейтинг платформ 2026</span>
+                <span class="pb-related-desc">Обзор топ платформ для аренды квартир и домов. Сравнение комиссий, безопасности сделок и отзывов пол</span>
+            </a><a href="/drugoe/n/na/nastoyashchaya-familiya-lyuisa-kerrolla.html" class="pb-related-card">
+                <span class="pb-related-title">Настоящая фамилия Льюиса Кэрролла: псевдоним и реальное имя автора</span>
+                <span class="pb-related-desc">Кто на самом деле скрывался за псевдонимом Льюис Кэрролл? Полная фамилия Чарльза Доджсона, история в</span>
+            </a><a href="/drugoe/v/vo/vozrast-solntsa-i-zemli.html" class="pb-related-card">
+                <span class="pb-related-title">Возраст Солнца и Земли: научные методы и точные цифры</span>
+                <span class="pb-related-desc">Узнайте точный возраст Солнца и Земли. Разбор методов радиометрического датирования, хронотермометри</span>
+            </a><a href="/drugoe/c/ch/chto-oznachaet-kogda-vidish-na-chasakh-17-17.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает видеть 17:17: эзотерическое и психологическое значение</span>
+                <span class="pb-related-desc">Расшифровка ангельской нумерологии 17:17. Узнайте, что символизирует эта комбинация цифр, как она вл</span>
+            </a><a href="/drugoe/9/9-/9-00-vechera-eto-skolko.html" class="pb-related-card">
+                <span class="pb-related-title">9:00 вечера это сколько: перевод времени и форматы 24 часа</span>
+                <span class="pb-related-desc">Узнайте, сколько будет 9 вечера в 24-часовом формате. Разбор часовых поясов, примеры перевода времен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">💻 Техно Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a> · <a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a> · <a href="/category/set-i-internet/">📶 Сеть и Интернет</a> · <a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a> · <a href="/category/televizory-i-tv-pristavki/">📺 Телевизоры и ТВ-приставки</a> · <a href="/category/audio-i-video/">🎧 Аудио и Видео</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Техно Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

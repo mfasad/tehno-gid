@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>💻</text></svg>">
+    <title>Как подключить джойстик Nintendo к ПК: полное руководство по настройке — Техно Гид</title>
+    <meta name="description" content="Подробная инструкция: как подключить контроллеры Joy-Con, Pro Controller и Switch к компьютеру. Настройка через Steam, DS4Windows и прошивку.">
+    <link rel="canonical" href="https://tehno-gid.vercel.app/articles/k/ka/kak-podklyuchit-dzhojstik-nintendo-k-pk.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как подключить джойстик Nintendo к ПК: полное руководство по настройке">
+    <meta property="og:description" content="Подробная инструкция: как подключить контроллеры Joy-Con, Pro Controller и Switch к компьютеру. Настройка через Steam, DS4Windows и прошивку.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1781752307">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">💻</span>
+                <span class="pb-logo-text">Техно Гид</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/kompyutery-i-noutbuki/" class="pb-dropdown-item">🖥️ Компьютеры и Ноутбуки</a>
+<a href="/category/smartfony-i-planshety/" class="pb-dropdown-item">📱 Смартфоны и Планшеты</a>
+<a href="/category/set-i-internet/" class="pb-dropdown-item">📶 Сеть и Интернет</a>
+<a href="/category/printery-i-periferiya/" class="pb-dropdown-item">🖨️ Принтеры и Периферия</a>
+<a href="/category/televizory-i-tv-pristavki/" class="pb-dropdown-item">📺 Телевизоры и ТВ-приставки</a>
+<a href="/category/audio-i-video/" class="pb-dropdown-item">🎧 Аудио и Видео</a>
+<a href="/category/3d-pechat-i-modelirovanie/" class="pb-dropdown-item">🖨️ 3D Печать и Моделирование</a>
+<a href="/category/soft-i-prilozheniya/" class="pb-dropdown-item">💿 Софт и Приложения</a>
+<a href="/category/remont-i-diagnostika/" class="pb-dropdown-item">🔧 Ремонт и Диагностика</a>
+<a href="/category/elektronika-i-gadzhety/" class="pb-dropdown-item">⌚ Электроника и Гаджеты</a>
+<a href="/category/bezopasnost-i-akkaunty/" class="pb-dropdown-item">🔒 Безопасность и Аккаунты</a>
+<a href="/category/igry-i-razvlecheniya/" class="pb-dropdown-item">🎮 Игры и Развлечения</a>
+<a href="/category/avtomobilnaya-elektronika/" class="pb-dropdown-item">🚗 Автомобильная электроника</a>
+<a href="/category/umnyj-dom/" class="pb-dropdown-item">🏠 Умный Дом</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как подключить джойстик Nintendo к ПК: полное руководство по настройке</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-контроллера-и-выбор-метода-подключения">Подготовка контроллера и выбор метода подключения</a></li><li><a href="#нативная-интеграция-через-платформу-steam">Нативная интеграция через платформу Steam</a></li><li><a href="#работа-с-контроллерами-без-использования-steam">Работа с контроллерами без использования Steam</a></li><li><a href="#проблемы-совместимости-и-их-решение">Проблемы совместимости и их решение</a></li><li><a href="#настройка-в-эмуляторах-и-специализированном-по">Настройка в эмуляторах и специализированном ПО</a></li><li><a href="#продвинутая-настройка-и-альтернативные-решения">Продвинутая настройка и альтернативные решения</a></li><li><a href="#faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/drugoe/1/11/11-chasov-utra-eto-skolko.html">11 часов утра — это сколько по времени и как правильно писать</a></li><li><a href="/drugoe/r/ro/rosneft-zaregistrirovat-kartu-loyalnosti.html">Как зарегистрировать карту лояльности Роснефть: инструкция</a></li><li><a href="/drugoe/k/ka/kakie-psikhicheskie-rasstrojstva-byli-u-chikatilo.html">Диагноз Чикатило: какие психические расстройства выявили</a></li><li><a href="/drugoe/c/ch/chto-oznachaet-na-chasakh-9-09.html">Что означает на часах 9:09: Тайное значение и психология времени</a></li><li><a href="/articles/p/pr/prilozhenie-ratsiya-na-ajfon.html">Приложение рация на Айфон: ТОП-5 лучших программ 2026</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как подключить джойстик Nintendo к ПК: полное руководство по настройке</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-контроллера-и-выбор-метода-подключения">Подготовка контроллера и выбор метода подключения</a></li><li><a href="#нативная-интеграция-через-платформу-steam">Нативная интеграция через платформу Steam</a></li><li><a href="#работа-с-контроллерами-без-использования-steam">Работа с контроллерами без использования Steam</a></li><li><a href="#проблемы-совместимости-и-их-решение">Проблемы совместимости и их решение</a></li><li><a href="#настройка-в-эмуляторах-и-специализированном-по">Настройка в эмуляторах и специализированном ПО</a></li><li><a href="#продвинутая-настройка-и-альтернативные-решения">Продвинутая настройка и альтернативные решения</a></li><li><a href="#faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Подключение геймпада от консоли Nintendo Switch к персональному компьютеру открывает доступ к огромной библиотеке игр с отличным тактильным откликом. Современные контроллеры, такие как <em>Pro Controller</em> или пара <code>Joy-Con</code>, обладают эргономичным дизайном и технологией HD Rumble, что делает геймплей значительно приятнее, чем использование клавиатуры и мыши в некоторых жанрах.</p>
+
+<p>Процесс сопряжения может варьироваться в зависимости от выбранного метода: проводного подключения через USB-кабель или беспроводного соединения по Bluetooth. Однако, "из коробки" операционная система Windows не всегда корректно распознает специфические протоколы Nintendo, требуя использования стороннего программного обеспечения или встроенных функций игровых платформ.</p>
+
+<p>В данной статье мы разберем все доступные способы интеграции устройства в экосистему ПК, от базового сопряжения до тонкой настройки кнопок в эмуляторах. Вы узнаете, как избежать распространенных проблем с драйверами и обеспечить стабильное соединение без задержек (лаггов), что критично для соревновательных дисциплин.</p>
+
+<h2 id="подготовка-контроллера-и-выбор-метода-подключения">Подготовка контроллера и выбор метода подключения</h2>
+
+<p>Перед началом любых манипуляций необходимо убедиться, что ваш <em>контроллер заряжен</em>. Низкий уровень заряда аккумулятора часто приводит к нестабильному соединению или невозможности обнаружения устройства системой. Если вы планируете использовать беспроводной режим, убедитесь, что на вашем компьютере установлен Bluetooth-адаптер версии 4.0 или выше.</p>
+
+<p>Существует два основных пути интеграции: проводной и беспроводной. Прямое подключение через USB-кабель типа USB-C (для Pro Controller) или USB-C на micro-USB (для Joy-Con удерживателей) является самым надежным вариантом. В этом случае устройство определяется как стандартное HID-устройство, и задержка сигнала минимальна.</p>
+
+<p>Беспроводной метод требует предварительного перевода геймпада в режим сопряжения. Для <em>Pro Controller</em> необходимо нажать маленькую кнопку синхронизации, расположенную над портом зарядки рядом с логотипом Nintendo. Для Joy-Con нужно снять их с консоли и нажать кнопку синхронизации на торце каждого стика, пока индикаторы не начнут быстро мигать.</p>
+
+<p>Выбор метода зависит от ваших приоритетов: провод гарантирует стабильность и одновременную подзарядку, тогда как беспроводное соединение обеспечивает свободу движений. Важно учитывать, что некоторые старые игры могут не поддерживать нативные протоколы Nintendo без дополнительных утилит.</p>
+
+<h2 id="нативная-интеграция-через-платформу-steam">Нативная интеграция через платформу Steam</h2>
+
+<p>Самый простой способ заставить любой контроллер Nintendo работать в играх — использовать клиент <strong>Steam</strong>. Эта платформа обладает встроенной системой <strong>Steam Input</strong>, которая эмулирует сигналы XInput (стандарт для Xbox), делая геймпад совместимым с большинством современных тайтлов.</p>
+
+<p>Для активации функции зайдите в настройки клиента, перейдите в раздел «Контроллер» и включите опцию «Поддержка контроллеров Nintendo». После этого устройство, подключенное к ПК, автоматически будет распознано, и вы сможете настроить раскладку кнопок под конкретную игру.</p>
+
+<p>Особенностью работы в Steam является возможность использования гироскопа и сенсорной панели Pro Controller как мыши. Это позволяет играть в стратегии или шутеры, используя тачпад для прицеливания, что значительно расширяет функциональность устройства.</p>
+
+<p>Если игра не запускается через саму Steam, но вы хотите использовать джойстик, можно добавить её как «Неигровое приложение» в библиотеку. Это позволит применить глобальные настройки контроллера ко всем запускаемым из клиента программам.</p>
+
+<blockquote>⚠️ Внимание: Включенная поддержка контроллеров Nintendo в Steam может конфликтовать с нативными настройками некоторых эмуляторов. Если игра видит джойстик дважды, временно отключите эту опцию в разделе настроек контроллера.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Steam Input — это универсальное решение, которое переводит сигналы Nintendo в стандарт Xbox, обеспечивая совместимость с тысячами игр без сложной настройки.</p></aside>
+
+<div class="pb-poll" id="poll-dc07e247"><div class="pb-poll-question">📊 Как вы преимущественно подключаете геймпады?</div><div class="pb-poll-option" data-poll="dc07e247" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">По проводу (USB)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="dc07e247" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Через Bluetooth</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="dc07e247" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Через переходник (док-станцию)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="dc07e247" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не подключал еще</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="работа-с-контроллерами-без-использования-steam">Работа с контроллерами без использования Steam</h2>
+
+<p>Для игр, запускаемых вне платформы Steam (например, через Epic Games, Ubisoft Connect или собственные лаунчеры), нативная поддержка может отсутствовать. В таких случаях потребуется стороннее программное обеспечение для эмуляции контроллера Xbox 360.</p>
+
+<p>Наиболее популярным решением является утилита <em>DS4Windows</em>. Несмотря на название, она отлично поддерживает устройства Nintendo. Программа создает виртуальный драйвер, заставляя систему думать, что к компьютеру подключен геймпад от Xbox, что гарантирует 100% совместимость.</p>
+
+<p>Альтернативой служит бесплатная программа <strong>x360ce</strong>, которая работает на уровне DLL-библиотек прямо в папке с игрой. Это позволяет настроить управление для конкретных проектов без необходимости держать открытым сторонний софт на постоянной основе.</p>
+
+<p>При использовании таких утилит важно корректно настроить карту кнопок, так как расположение кнопок A/B и X/Y в экосистеме Nintendo и Xbox зеркально отражено. Программа автоматически предложит стандартный профиль, но его можно изменить под ваши привычки.</p>
+
+<details class="pb-accordion"><summary>Что делать, если игра не видит контроллер?</summary><div class="pb-accordion-body"><p>Проверьте, не запущен ли Steam в фоновом режиме, так как он может перехватывать управление. Также убедитесь, что вы подключили устройство до запуска игры, а не после.</p></div></details>
+
+<h2 id="проблемы-совместимости-и-их-решение">Проблемы совместимости и их решение</h2>
+
+<p>Иногда даже при правильном подключении система не реагирует на нажатия кнопок или стиков. Это часто связано с конфликтом драйверов или устаревшей версией операционной системы. В таких случаях необходимо обновить драйверы Bluetooth или USB-контроллера через «Диспетчер устройств».</p>
+
+<p>Частой проблемой является отсутствие вибрации или неработающий гироскоп. Эти функции требуют специфических драйверов, которые могут отсутствовать в стандартной поставке Windows. Использование <em>reWASD</em> или аналогичного ПО часто решает эту проблему, предоставляя доступ ко всем функциям <strong>HD Rumble</strong>.</p>
+
+<p>Также стоит обратить внимание на качество Bluetooth-адаптера. Дешевые китайские модули могут иметь низкую чувствительность или частые разрывы соединения. Рекомендуется использовать адаптеры Intel, Realtek или специализированные USB-ключи с поддержкой Bluetooth 5.0 и выше.</p>
+
+<p>Если вы используете Joy-Con по отдельности, убедитесь, что они подключены как разные устройства. В некоторых эмуляторах это позволяет реализовать управление двумя игроками на одном ПК, используя по одному джойстику для каждого.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист устранения неполадок</h4><label class="check-item"><input type="checkbox"><span>Обновить драйверы Bluetooth</span></label><label class="check-item"><input type="checkbox"><span>Отключить Steam Input</span></label><label class="check-item"><input type="checkbox"><span>Проверить заряд батареи</span></label><label class="check-item"><input type="checkbox"><span>Использовать качественный USB-кабель</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="настройка-в-эмуляторах-и-специализированном-по">Настройка в эмуляторах и специализированном ПО</h2>
+
+<p>Для тех, кто использует ПК для запуска игр с других консолей, настройка геймпада в эмуляторах (Yuzu, Ryujinx, Dolphin) является ключевым этапом. Чаще всего эмуляторы поддерживают стандарт XInput, поэтому использование <strong>DS4Windows</strong> является обязательным шагом для корректной работы.</p>
+
+<p>В настройках эмулятора необходимо зайти в раздел «Input» или «Gamepad» и выбрать подключенное устройство как «Controller» или «XInput». Важно не перепутать порт 1 и порт 2, если вы подключили несколько устройств одновременно.</p>
+
+<p>Особое внимание следует уделить настройке аналоговых стиков. В некоторых эмуляторах можно калибровать мертвые зоны, чтобы избежать дрейфа курсора, который характерен для дешевых джойстиков или устройств с большим пробегом.</p>
+
+<p>Для продвинутых пользователей доступна настройка макросов, позволяющая назначать сложные комбинации кнопок на одно нажатие. Это особенно удобно в RPG и файтингах, где требуется быстрое выполнение комбо-ударов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В настройках эмулятора всегда настраивайте «Deadzone» (мертвую зону) стиков. Это предотвратит случайное перемещение персонажа, если стик имеет небольшой люфт или износ.</p></aside>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод подключения</th>
+<th>Тип устройства</th>
+<th>Совместимость</th>
+<th>Задержка сигнала</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bluetooth</td>
+<td>Pro Controller</td>
+<td>Высокая (с ПО)</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>USB-C провод</td>
+<td>Pro Controller</td>
+<td>Нативная (в Steam)</td>
+<td>Минимальная</td>
+</tr>
+<tr>
+<td>Bluetooth</td>
+<td>Joy-Con (пара)</td>
+<td>Средняя</td>
+<td>Высокая (может быть)</td>
+</tr>
+<tr>
+<td>Док-станция</td>
+<td>Joy-Con (в доке)</td>
+<td>Низкая (без ПО)</td>
+<td>Минимальная</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="продвинутая-настройка-и-альтернативные-решения">Продвинутая настройка и альтернативные решения</h2>
+
+<p>Для полного контроля над устройством можно использовать утилиту <strong>reWASD</strong>. Это мощное программное обеспечение позволяет создавать сложные слои управления, назначать действия на тачпад, гироскоп и даже нажатие стиков (L3/R3).</p>
+
+<p>В reWASD можно настроить эмуляцию клавиатуры и мыши для геймпада, что позволяет играть в игры, не поддерживающие геймпады (например, MOBA или стратегии) с помощью контроллера. Вы можете назначить перемещение персонажа на стики, а прицеливание — на тачпад.</p>
+
+<p>Однако использование такого ПО часто является платным или имеет ограничения в бесплатной версии. Бесплатные аналоги, такие как ViGEmBus, требуют более сложной ручной настройки, но предоставляют схожий функционал для опытных пользователей.</p>
+
+<p>Также стоит помнить о физических ограничениях. Joy-Con имеют меньший размер и могут быть неудобны для людей с крупными руками при долгом использовании в режиме отдельного джойстика. Для комфортной игры рекомендуется использовать специальную рукоятку-держатель.</p>
+
+<blockquote>⚠️ Внимание: При использовании стороннего ПО для эмуляции контроллера обязательно закрывайте программу перед запуском игр с античит-системами (например, Valorant или Fortnite), чтобы избежать блокировки аккаунта.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте reWASD или DS4Windows для максимальной кастомизации, но будьте осторожны с античит-защитой в онлайн-играх.</p></aside>
+
+<h2 id="faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</h2>
+
+<details>
+<summary>Почему компьютер не видит джойстик при подключении по Bluetooth?</summary>
+<p>Чаще всего проблема в том, что устройство не переведено в режим сопряжения. Убедитесь, что индикаторы на джойстике мигают. Также проверьте, не подключен ли геймпад к консоли Switch или другому устройству, так как он может автоматически переключаться на него.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить Joy-Con по отдельности к ПК?</summary>
+<p>Да, это возможно. Каждый Joy-Con определяется как отдельный геймпад. В настройках Steam или эмуляторов это позволяет играть в два игрока, используя по одному стику. Однако многие современные игры рассчитаны на полноценные геймпады и могут не поддерживать одиночные стики.</p>
+</details>
+
+<details>
+<summary>Работает ли вибрация (HD Rumble) на ПК?</summary>
+<p>Нативная поддержка HD Rumble в Windows отсутствует. Однако специальные программы, такие как DS4Windows (с плагинами) или reWASD, могут эмулировать вибрацию, используя стандартные драйверы XInput. Полноценная вибрация работает только в некоторых играх через Steam.</p>
+</details>
+
+<details>
+<summary>Какой кабель лучше использовать для подключения Pro Controller?</summary>
+<p>Рекомендуется использовать качественный кабель с поддержкой передачи данных (USB-C на USB-A или USB-C). Дешевые зарядные кабели могут не передавать сигнал, из-за чего геймпад будет только заряжаться, но не работать. Ищите кабель с маркировкой "Data Sync".</p>
+</details>
+
+<details>
+<summary>Что делать, если стики дрифтят (самопроизвольно двигаются)?</summary>
+<p>Проблема дрифта решается программной калибровкой мертвых зон в эмуляторах или через настройки Steam. Если это не помогает, проблема аппаратная, и потребуется чистка потенциометров спиртом или замена стика. <mark>Регулярная чистка гнезд стиков продлевает срок службы геймпада.</mark></p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/drugoe/1/11/11-chasov-utra-eto-skolko.html" class="pb-related-card">
+                <span class="pb-related-title">11 часов утра — это сколько по времени и как правильно писать</span>
+                <span class="pb-related-desc">Узнайте, что означает 11 часов, как обозначается это время в 12 и 24-часовом формате, и как избежать</span>
+            </a><a href="/drugoe/r/ro/rosneft-zaregistrirovat-kartu-loyalnosti.html" class="pb-related-card">
+                <span class="pb-related-title">Как зарегистрировать карту лояльности Роснефть: инструкция</span>
+                <span class="pb-related-desc">Полная инструкция по регистрации карты лояльности Роснефть Премиум. Онлайн и на АЗС, бонусы, програм</span>
+            </a><a href="/drugoe/k/ka/kakie-psikhicheskie-rasstrojstva-byli-u-chikatilo.html" class="pb-related-card">
+                <span class="pb-related-title">Диагноз Чикатило: какие психические расстройства выявили</span>
+                <span class="pb-related-desc">Подробный разбор диагноза Андрея Чикатило. Какие психические расстройства были у маньяка: шизофрения</span>
+            </a><a href="/drugoe/c/ch/chto-oznachaet-na-chasakh-9-09.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает на часах 9:09: Тайное значение и психология времени</span>
+                <span class="pb-related-desc">Почему вы смотрите на часы в 9:09? Разбираем эзотерические трактовки, нумерологические значения и пс</span>
+            </a><a href="/articles/p/pr/prilozhenie-ratsiya-na-ajfon.html" class="pb-related-card">
+                <span class="pb-related-title">Приложение рация на Айфон: ТОП-5 лучших программ 2026</span>
+                <span class="pb-related-desc">Обзор лучших приложений-раций для iPhone. Сравнение функций, стоимости и качества связи. Инструкция </span>
+            </a><a href="/drugoe/k/ka/kak-rabotayut-piloty-passazhirskikh-samoletov.html" class="pb-related-card">
+                <span class="pb-related-title">Как работают пилоты пассажирских самолетов: кабина и управление</span>
+                <span class="pb-related-desc">Подробный разбор работы пилотов лайнеров: распределение ролей, автопилот, взлет и посадка. Узнайте, </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">💻 Техно Гид</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/kompyutery-i-noutbuki/">🖥️ Компьютеры и Ноутбуки</a> · <a href="/category/smartfony-i-planshety/">📱 Смартфоны и Планшеты</a> · <a href="/category/set-i-internet/">📶 Сеть и Интернет</a> · <a href="/category/printery-i-periferiya/">🖨️ Принтеры и Периферия</a> · <a href="/category/televizory-i-tv-pristavki/">📺 Телевизоры и ТВ-приставки</a> · <a href="/category/audio-i-video/">🎧 Аудио и Видео</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Техно Гид. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
